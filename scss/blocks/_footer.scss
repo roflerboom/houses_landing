@@ -1,0 +1,52 @@
+.footer {
+  background-color: $footer-bg;
+  padding-top: 72px;
+  padding-bottom: 60px;
+  font-size: 14px;
+  letter-spacing: 0.05rem;
+
+  @include mediaTablet {
+    padding-top: 46px;
+    padding-bottom: 30px;
+  }
+
+  // .footer__grid
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+
+    @include mediaTablet {
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 40px;
+    }
+  }
+
+  // .footer__logo
+
+  &__logo {
+    margin-top: -12px;
+  }
+
+  // .footer__nav
+
+  &__nav {
+  }
+
+  &__nav-list {
+    display: grid;
+    gap: 15px;
+  }
+  // .footer__address
+
+  &__address {
+    display: grid;
+    gap: 20px;
+  }
+  &__socials {
+    display: flex;
+    column-gap: 22px;
+    align-items: center;
+  }
+}
